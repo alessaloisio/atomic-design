@@ -1,1 +1,1 @@
-export * from './loadFontsForStorybook';
+export {};

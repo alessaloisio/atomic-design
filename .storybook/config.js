@@ -1,16 +1,17 @@
 import React from 'react';
+
 import { configure, addDecorator, addParameters } from '@storybook/react';
-import { withA11y } from '@storybook/addon-a11y';
+
+// ADDONS
+import { withA11y } from '@storybook/addon-a11y'; // accessbibilty
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
-import { withThemesProvider } from 'themeprovider-storybook';
-import { loadFontsForStorybook } from '../src/utils/index';
-
-import { GlobalStyle } from '../src/components/shared/global';
+// APPEARANCES
+import { GlobalStyle } from '../src/components/_shared/global';
 
 addParameters({
   options: {
-    showRoots: true,
+    showRoots: false,
     brandTitle: 'Atomic Design',
   },
   viewport: {
@@ -18,7 +19,6 @@ addParameters({
   },
 });
 
-addDecorator(withA11y);
 addDecorator(story => (
   <>
     <GlobalStyle />
@@ -26,17 +26,7 @@ addDecorator(story => (
   </>
 ));
 
-const themes = [
-  {
-    name: 'Theme1',
-    backgroundColor: '#fff', // Optional, it's used for setting dynamic background color on storybook
-  },
-  {
-    name: 'Theme2',
-    backgroundColor: '#000', // Optional, it's used for setting dynamic background color on storybook
-  },
-];
-addDecorator(withThemesProvider(themes));
+addDecorator(withA11y);
 
 // automatically import all files ending in *.stories.js
 configure(
@@ -46,5 +36,3 @@ configure(
   ],
   module
 );
-
-loadFontsForStorybook();
