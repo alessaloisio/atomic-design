@@ -1,0 +1,32 @@
+<Meta title="Style Guide/Intro" />
+
+# Get started
+
+Storybook Design System is a reusable component library that helps Storybook contributors build UIs faster. The goal is to make building durable UIs more productive and satisfying.
+
+## Install
+
+`npm install --save @alessio95/atomic-design`
+
+### **Use**
+
+Import components you want into your UI
+
+`import { Button, Badge } from ‘@alessio95/atomic-design;`
+
+and use them like so
+
+```
+  const example = () => (
+    <div>
+      <Button appearance="primary" onClick={() => 0}>Do something</Button>
+      <Badge onClick={this.clear}>Cool</Badge>
+    </div>
+  )
+```
+
+### **Run and develop locally**
+
+Clone the [Atomic Design GitHub project](https://github.com/alessaloisio/atomic-design) then start Storybook.
+
+`npm i && npm run storybook`

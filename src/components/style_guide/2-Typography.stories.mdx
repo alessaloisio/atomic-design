@@ -1,0 +1,45 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+import { typography } from '../shared/styles';
+
+<Meta title="Style Guide/Typography" />
+
+# Typography
+
+**Font:** Roboto Slab
+
+**Weights:** 400(regular), 700(bold), 900(black)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontWeight={typography.weight.black}
+/>
+
+**Font:** Lato
+
+**Weights:** 400(regular), 700(bold)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.s1),
+    Number(typography.size.s2),
+    Number(typography.size.s3),
+    Number(typography.size.m1),
+    Number(typography.size.m2),
+    Number(typography.size.m3),
+    Number(typography.size.l1),
+    Number(typography.size.l2),
+    Number(typography.size.l3),
+  ]}
+  fontWeight={typography.weight.black}
+/>

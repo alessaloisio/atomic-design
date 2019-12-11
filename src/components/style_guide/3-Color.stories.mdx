@@ -1,0 +1,36 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import { color } from '../shared/styles';
+
+<Meta title="Style Guide/Colors" />
+
+# Colors
+
+<ColorPalette>
+  <ColorItem title="color.primary" subtitle="Coral" colors={[color.primary]} />
+  <ColorItem title="color.secondary" subtitle="Blue" colors={[color.secondary]} />
+  <ColorItem title="color.tertiary" subtitle="Grey" colors={[color.tertiary]} />
+  <ColorItem title="color.positive" subtitle="Green" colors={[color.positive]} />
+  <ColorItem title="color.warning" subtitle="Ochre" colors={[color.warning]} />
+  <ColorItem title="color.negative" subtitle="Red" colors={[color.negative]} />
+  <ColorItem title="color.orange" subtitle="Orange" colors={[color.orange]} />
+  <ColorItem title="color.gold" subtitle="Gold" colors={[color.gold]} />
+  <ColorItem title="color.green" subtitle="Green" colors={[color.green]} />
+  <ColorItem title="color.seafoam" subtitle="Seafoam" colors={[color.seafoam]} />
+  <ColorItem title="color.purple" subtitle="Purple" colors={[color.purple]} />
+  <ColorItem title="color.ultraviolet" subtitle="Ultraviolet" colors={[color.ultraviolet]} />
+  <ColorItem
+    title="Monochrome"
+    colors={[
+      color.darkest,
+      color.darker,
+      color.dark,
+      color.mediumdark,
+      color.medium,
+      color.mediumlight,
+      color.light,
+      color.lighter,
+      color.lightest,
+    ]}
+  />
+</ColorPalette>
